@@ -22,8 +22,16 @@ public class ReadAFile extends GsonClass {
                     }
 
     }
+    public void offlineReadFile(String fileName) throws FileNotFoundException {
 
-    public void findQuote(String fileName,String quote) throws FileNotFoundException {
+        int random = (int)(Math.random() * readJson(fileName).length);
+        Jokes result=readJoke(fileName)[random];
+        System.out.println(result);
+
+
+
+
+    }    public void findQuote(String fileName,String quote) throws FileNotFoundException {
 
 
         for(Quotes element: readJson(fileName)){

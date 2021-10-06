@@ -4,7 +4,7 @@ public class Quotes {
     String author;
     String likes;
     String text;
-
+    String content;
     public Quotes(String author, String likes, String text) {
         this.author = author;
         this.likes = likes;
